@@ -1,0 +1,177 @@
+/*---------------------------------------*/
+/* Booking Form */
+/*---------------------------------------*/
+.modal {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100vh;
+  z-index: 1000;
+  background: #d3d3d3;
+}
+
+.booking-form {
+  width: 650px;
+  margin: 30px;
+  background: linear-gradient(to right, #ffffff 0%, #fafafa 50%, #ffffff 99%);
+  border-radius: 10px;
+  position: absolute;
+  top: 0;
+  justify-content: center;
+  align-items: center;
+  overflow: auto;
+}
+
+.error-message {
+  color: rgb(255, 0, 0);
+}
+
+.sucess-message {
+  color: rgb(0, 124, 33);
+  font-weight: bold;
+  font-size: 1.5rem;
+  margin:10px;
+  text-align: center;
+}
+
+@media only screen and (max-width: 768px) {
+  .booking-form {
+    margin: auto;
+    width: 100%;
+    height: 100%;
+  }
+}
+
+/*---------------------------------------*/
+/* Form Header */
+/*---------------------------------------*/
+.form-header {
+  background-color: #eff0f1;
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+  width: 100%;
+  height: 5rem;
+  border: 1px solid #cccccc;
+}
+
+.form-header h1 {
+  font-size: 17px;
+  text-align: center;
+  color: #666;
+  padding: 20px;
+  float: left;
+  width: 90%;
+}
+
+.form-header button {
+  width: 6%;
+  float: right;
+  padding: 3px 3px;
+  margin: 3px 3px;
+}
+
+
+/*---------------------------------------*/
+/* Form Body */
+/*---------------------------------------*/
+.form-body {
+  padding: 10px 40px;
+  color: #666;
+  overflow-y: auto;
+}
+
+.form-group {
+  margin-bottom: 20px;
+}
+
+.form-body .label-title {
+  color: #666;
+  font-size: 12px;
+  font-weight: bold;
+}
+
+.form-body .input-fields {
+  font-size: 12px;
+  box-sizing: border-box;
+  width: 100%;
+  height: 25px;
+  padding-left: 10px;
+  padding-right: 10px;
+  color: #333333;
+  text-align: left;
+  border: 1px solid #d6d6d6;
+  border-radius: 4px;
+  background: white;
+  outline: none;
+}
+
+.horizontal-group .left {
+  float: left;
+  width: 49%;
+}
+
+.horizontal-group .right {
+  float: right;
+  width: 49%;
+}
+
+/* Extra small devices (Small Phones)  */
+@media only screen and (max-width: 768px) {
+  .form-body .label-title {
+    font-size: 11px;
+  }
+
+  .form-body .input-fields {
+    font-size: 11px;
+  }
+
+  .horizontal-group .left {
+    width: 100%;
+  }
+
+  .horizontal-group .right {
+    width: 100%;
+  }
+}
+
+/*---------------------------------------*/
+/* Form Footer */
+/*---------------------------------------*/
+
+.booking-form .form-footer {
+  background-color: #eff0f1;
+  border-bottom-left-radius: 10px;
+  border-bottom-right-radius: 10px;
+  padding: 10px 40px;
+  text-align: center;
+  border-top: 1px solid #cccccc;
+  clear: both;
+}
+
+.btn {
+  background-color: #f7941d;
+  color: #fdfdfd;
+  border: none;
+  width: 250px;
+  height: 35px;
+  margin-left: 15px;
+  cursor: pointer;
+}
+
+.btn:hover {
+  box-shadow: 5px 5px 10px 2px rgba(0, 0, 0, 0.8);
+  color: white;
+}
+
+.btn:enabled {
+  margin: 5px;
+}
+
+.btn:disabled {
+  margin: 5px;
+  opacity: 0.5;
+}
